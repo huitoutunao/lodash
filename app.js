@@ -1,11 +1,11 @@
-import add from './add'
-// import debounce from './debounce'
+// import add from './add'
+import debounce from './debounce'
 
-console.log(add(1, 2))
+// console.log(add(1, 2))
 
-// function test() {
-//   console.log('debounce')
-// }
+function test() {
+  console.log('debounce')
+}
 
-// const fn = debounce(test, 1000)
-// fn()
+const fn = debounce(test, 1000)
+fn()

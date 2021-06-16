@@ -8,15 +8,15 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
-            // "url": "http://localhost:8081",
             "file": "${workspaceFolder}\\app.html"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Launch Node",
+            "skipFiles": ["<node_internals>/**"],
             "program": "${workspaceFolder}\\app.js",
-            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+            "runtimeExecutable": "${workspaceRoot}\\node_modules\\.bin\\babel-node",
             "sourceMaps": true,
             "env": {
               "BABEL_ENV": "debug"
