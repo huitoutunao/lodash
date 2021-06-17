@@ -8,7 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Node",
-            "skipFiles": ["<node_internals>/**"],
+            "skipFiles": [
+              "${workspaceFolder}/node_modules/**/*.js",
+              "<node_internals>/**/*.js"
+            ],
             "program": "${workspaceFolder}\\app.js",
             "runtimeExecutable": "${workspaceRoot}\\node_modules\\.bin\\babel-node",
             "sourceMaps": true,
